@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -236,4 +236,53 @@ footer h3 {
 footer p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+/* MYANMAR LANGUAGE SUPPORT */
+
+body {
+    font-family: "Noto Sans Myanmar", Arial, sans-serif;
+}
+
+/* LANGUAGE BUTTONS */
+
+.language-switch {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lang-btn {
+    border: 1px solid #d5dfea;
+    background: white;
+    color: #142b49;
+    padding: 8px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lang-btn.active {
+    background: #142b49;
+    color: white;
+    border-color: #142b49;
+}
+
+.lang-btn:hover {
+    background: #3976b9;
+    color: white;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 850px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
